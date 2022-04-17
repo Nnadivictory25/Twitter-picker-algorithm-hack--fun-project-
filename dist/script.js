@@ -1,0 +1,2 @@
+"use strict";var modal=document.querySelector(".popup");function modalOpen(){modal.classList.add("modal-active"),window.onclick=function(o){o.target==modal&&modal.classList.remove("modal-active")}}
+//# sourceMappingURL=script.js.map

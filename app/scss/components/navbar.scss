@@ -1,0 +1,38 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+
+.navbar {
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.7px);
+    -webkit-backdrop-filter: blur( 4.5px);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-size: rem(25);
+        font-weight: 800;
+        cursor: pointer;
+        i {
+            color: aqua;
+            padding-right: rem(3);
+            font-size: rem(35);
+        }
+    }
+    a {
+        text-transform: capitalize;
+        font-size: rem(13); 
+        font-weight: 600;
+        background-color: aqua;
+        color: var(--black);
+        padding: rem(9) rem(15);
+        border-radius: rem(30);
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: rgb(13, 203, 203);
+        }
+    }
+}

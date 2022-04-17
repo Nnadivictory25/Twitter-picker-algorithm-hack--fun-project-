@@ -1,0 +1,37 @@
+.d-flex {
+    display: flex;
+}
+.j-sb {
+    justify-content: space-between;
+}
+.mg-tp {
+    margin-top: rem(5);
+}
+.modal-active {
+    animation: fade-in .3s  linear forwards ;
+}
+.fade-out {
+    animation: fade-out .3s  linear forwards ;
+}
+
+@keyframes fade-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    99% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

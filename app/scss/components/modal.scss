@@ -1,0 +1,169 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+
+
+.popup {
+    z-index: 99;
+    white-space: nowrap;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: rem(7);
+    position: fixed;
+    justify-content: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    visibility: hidden;
+
+    .form {
+        background-color: var(--white);
+        color: var(--black);
+        padding: rem(33);
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        transform: translate(0%, 14%);
+        border-radius: rem(5);
+        white-space: nowrap;
+        z-index: 999;
+        &__header img {
+            align-items: center;
+            margin-bottom: -23px;
+            margin-top: -23px;
+            width: rem(40);
+        }
+        &__header h4 {
+            font-size: rem(20);
+            margin-bottom: -1px;
+        }
+        .sign-in-with1 {
+            cursor: pointer;
+            margin-top: rem(14);
+            margin-bottom: rem(10);
+            background: transparent;
+            border: 1px solid #7c7878;
+            border-radius: rem(15);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in-out;
+
+
+            img {
+                width: rem(31);
+            }
+            span {
+                font-size: rem(14);
+            }
+
+            &:hover {
+                background: #e0dfdf;
+            }
+        }
+        .sign-in-with {
+            cursor: pointer;
+            margin-bottom: rem(10);
+            background: transparent;
+            border: 1px solid #7c7878;
+            border-radius: rem(15);
+            padding: rem(2.99);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            align-items: center;
+            transition: all .3s ease-in-out;
+
+
+            img {
+                padding-right: rem(5);
+            }
+            span {
+                font-size: rem(14);
+            }
+
+            &:hover {
+                background: #e0dfdf;
+            }
+        }
+        .or {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: rem(6);
+        }
+        .or::before {
+            content: "";
+            position: absolute;
+            border: .1px solid #7c7878;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            margin-left: -146px;
+        }
+        .or::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #7c7878;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            margin-left: 146px;
+        }
+        &__inputBox {
+            background: #f5f8fa;
+            outline: none;
+            padding: rem(2);
+            margin: rem(12);
+            width: 100%;
+            margin-right: rem(30);
+            transform: translateX(-10px);
+            position: relative;
+            border-bottom: 2px solid #657786;
+
+            span {
+                position: absolute;
+                left: rem(6);
+                font-weight: 400;
+                color: #7c77a4;
+            }
+            
+            input{
+                width: 100%;
+                padding: rem(6);
+                font-size: rem(17);
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+        &__button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            width: 103%;
+            padding: rem(11);
+            border-radius: rem(20);
+            margin: rem(5);
+            margin-left: -3px;
+            font-size: rem(17);
+            font-weight: 500;
+            background-color: #1da1f2;
+            color: var(--white);
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: #0b7aba;
+            }
+        }
+        &__bottomText {
+            font-size: rem(15.5);
+            margin-top: rem(7);
+            .fp {
+                color: #1da1f2;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+
+.containerHeader {
+    padding: rem(16.5);
+    display: flex;
+}
+.padding {
+    padding: rem(16);
+}
