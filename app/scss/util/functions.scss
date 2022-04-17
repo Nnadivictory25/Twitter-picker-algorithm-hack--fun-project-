@@ -1,5 +1,5 @@
 $browser-context: 16;
 
 @function rem($pixels, $context: $browser-context) {
-  @return math.div($pixels / $context) * 1rem;
+  @return ($pixels / $context) * 1rem;
 }
