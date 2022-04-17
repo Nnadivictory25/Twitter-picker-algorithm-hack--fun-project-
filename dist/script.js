@@ -1,2 +1,2 @@
-"use strict";var modal=document.querySelector(".popup");function modalOpen(){modal.classList.add("modal-active"),window.onclick=function(o){o.target==modal&&modal.classList.remove("modal-active")}}
+"use strict";var modal=document.querySelector(".popup");function modalOpen(){modal.classList.contains("fade-out")?modal.classList.remove("fade-out"):modal.classList.add("modal-active"),window.onclick=function(a){a.target==modal&&modal.classList.add("fade-out")}}
 //# sourceMappingURL=script.js.map

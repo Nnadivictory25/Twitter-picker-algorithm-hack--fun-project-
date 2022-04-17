@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 .mg-tp {
-    margin-top: rem(5);
+    margin-top: rem(6);
 }
 .modal-active {
     animation: fade-in .3s  linear forwards ;
@@ -16,7 +16,7 @@
 
 @keyframes fade-in {
     0% {
-        visibility: hidden;
+        visibility: visible;
         opacity: 0;
     }
     100% {
@@ -30,7 +30,7 @@
         visibility: visible;
         opacity: 1;
     }
-    99% {
+    100% {
         visibility: hidden;
         opacity: 0;
     }
